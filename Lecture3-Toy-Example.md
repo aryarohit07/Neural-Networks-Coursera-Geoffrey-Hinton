@@ -6,8 +6,8 @@ Solution:
 function predictions = predict(W1,W2, X)
   a1 = X; % input layer
   z2 = a1 * W1;
-  a2 = sigmoid(z2);
-  predictions = a2 * W2;
+  a2 = sigmoid(z2); % hidden layer
+  predictions = a2 * W2; % output layer
 endfunction
 
 function g = sigmoid(z)
